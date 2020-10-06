@@ -41,7 +41,7 @@ const addValues = (arr, value) => {
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
-  for (var i = 0; i < times; i++) {
+  for (let i = 0; i < times; i++) {
     callback(arr, num);
   }
   return arr;
@@ -97,7 +97,7 @@ const fizzbuzz = (arr) => {
     if (index % 3 === 0 && index % 5 === 0) { results.push('Fizz Buzz'); }
     else if (index % 3 === 0) { results.push('Fizz'); }
     else if (index % 5 === 0) { results.push('Buzz'); }
-    else { results.push(index);}
+    else { results.push(index); }
   });
   return results;
 };
