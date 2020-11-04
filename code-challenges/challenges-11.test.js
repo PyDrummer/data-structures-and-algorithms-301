@@ -85,7 +85,7 @@ Return either true or false.
 
 const validatePhoneNumber = (phoneNumber) => {
   // Solution code here...
-  return /^([(]{0,1}[0-9]{3}[)]{0,1})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(phoneNumber);
+  return /(^\(\d{3}\)|(^\d{3}))[ -]?\d{3}[ -]?\d{4}$/g.test(phoneNumber);
   // let regex = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s.]{0,1}[0-9]{3}[-\s.]{0,1}[0-9]{4}$/;
   // let test = regex.test(phoneNumber);
 
